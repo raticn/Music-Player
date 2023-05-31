@@ -1,0 +1,148 @@
+.player{
+    margin: 0 auto ;
+    max-width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.slika{
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    position: relative;
+}
+.dbl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: space-between;
+}
+.left{
+    flex-basis: 180px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left:active{
+    background-color: rgba(255,255,255,0.3);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.playDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pauseDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    flex-basis: 180px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right:active{
+    background-color: rgba(255,255,255,0.3);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.slika button{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+.slika:hover .dbl{
+    display: flex;
+}
+/* .pause{
+    display: none;
+} */
+
+
+#cover{
+    margin: 20px 0;
+}
+.track_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.songName{
+    margin: 15px 0;
+    color: rgb(68, 68, 68);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.artist{
+    margin: 10px 0;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.playlist{
+    margin-top: 20px;
+}
+.song{
+    display: flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 7px ;
+    margin-bottom: 5px;
+    position: relative;
+}
+.song p{
+    margin: 8px 0 8px 20px;
+}
+.songImage{
+    max-width: 60px;
+    display: flex;
+}
+.songImage img{
+    width: 100%;
+}
+.songOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#pause{
+    display: none;
+}
+
+.active_song{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.active_song + .playlist #SongName,
+.active_song + .playlist #Artist {
+    color: dodgerblue;
+    font-weight: 600;
+}
+
+.trackbar{
+    width: 210px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+.trackbarOverlay{
+    max-width: 210px;
+}

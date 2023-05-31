@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "song":"All That",
+        "artist": "Benjamin Tissot",
+        "cover": "allthat.webp",
+        "file": "allthat.mp3"
+    },
+    {
+        "id":1,
+        "song":"Creative Minds",
+        "artist": "Benjamin Tissot",
+        "cover": "creativeminds.webp",
+        "file": "creativeminds.mp3"
+    },
+    {
+        "id":2,
+        "song":"Dreams",
+        "artist": "Benjamin Tissot",
+        "cover": "dreams.webp",
+        "file": "dreams.mp3"
+    }
+]

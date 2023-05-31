@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>MusicPlayer</title>
+</head>
+<body>
+
+    <div class="player">
+        <div class="main">
+            <div class="slika">
+                <img src="./images/allthat.webp" alt="slika" id="cover">
+                <div class="dbl">
+                    <div class="left"><button class="backward"><i class="fa-solid fa-rotate-left"></i></button></div>
+                    <div class="playDiv"><button class="play"><i class="fa-solid fa-play"></i></button></div>
+                    <div class="pauseDiv"><button class="pause"><i class="fa-solid fa-pause"></i></button></div>
+                    <div class="right"><button class="forward"><i class="fa-solid fa-rotate-right"></i></button></div>
+                </div>
+            </div>
+            <div class="track_info">
+                <p class="songName">All That</p>
+                <p class="artist">Benjamin Tissot</p>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="buttons">
+                <button id="backward"><i class="fa-solid fa-rotate-left"></i></button>
+                <button id="play"><i class="fa-solid fa-play"></i></button>
+                <button id="pause"><i class="fa-solid fa-pause"></i></button>
+                <button id="forward"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="trackbar">
+                <div class="trackbarOverlay"></div>
+            </div>
+            <div class="time">
+                <span id="current">00:00</span>
+                /
+                <span id="total">00:00</span>
+            </div>
+        </div>
+
+        <div class="playlist"></div>
+    </div>    
+
+        <template class="playlist_template">
+            <div class="song">
+                <div class="songOverlay" 
+                data-cover="##cover##"
+                data-song="##song##"
+                data-artist="##artist##"
+                data-file="##file##"
+                data-id="##id##"></div>
+                    <div class="songImage">
+                        <img src="./images/##cover##" alt="slika">
+                    </div>
+                    <div class="songInfo">
+                        <p id="SongName">##song##</p>
+                        <p id="Artist">##artist##</p>
+                    </div>
+            </div>
+        </template>
+
+    <script src="index.js"></script>
+</body>
+</html>
