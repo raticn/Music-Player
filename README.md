@@ -1,3 +1,14 @@
+## Music Player
+
+The music player comes with the following features:
+
+- Song Selection: The application includes a library of three songs that users can choose from to play.
+- Play/Pause: Users can easily start or pause the currently playing song with a simple click of a button.
+- Song Progress Control: The music player displays a progress bar indicating the current position of the song. Users can click anywhere on the progress bar to skip to a specific part of the song.
+- 10-Second Song Rewind and Fast-Forward: Users have the ability to rewind or fast-forward a song by 10 seconds by clicking the corresponding buttons.
+- When hovering over a song, additional controls for play/pause and song navigation appear. The rewind and fast-forward arrows that appear when hovering need to be clicked twice to initiate the song skipping.
+- Automatic Song Transition: When a song reaches its end, the next song in the playlist will automatically start playing.
+
 ## Running the Project
 
 1. Download or clone the repository to your computer.
